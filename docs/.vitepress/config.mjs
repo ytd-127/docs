@@ -1,7 +1,9 @@
 import { defineConfig } from 'vitepress'
 import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar'; // 自动生成侧边栏
 // https://vitepress.dev/reference/site-config
+
 export default defineConfig({
+  base:'/docs/',
   vite: {
     plugins: [
       AutoSidebar({
